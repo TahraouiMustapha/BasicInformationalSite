@@ -4,7 +4,7 @@ function serveFile(filepath, res) {
     fs.readFile(filepath, function(err, data) {
         if(err) {
             fs.readFile('404.html', function(err, data) {
-                res.writeHead(404, {'Content-Type': 'text/html'})
+                res.writeHead(404)
                 if(err) {
                     res.write('Page not found !');
                     return ;
