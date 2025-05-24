@@ -1,3 +1,4 @@
+// serve files manualy using node.js (without using a framework)
 const fs = require('fs');
 
 function serveFile(filepath, res) {
